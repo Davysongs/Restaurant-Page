@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+
+    z-index: 9999;
+}
+body{
+    background:linear-gradient(rgba(24, 16, 3, 0.3), rgba(46, 31, 4, 0.4)), url(https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 100vh;
+    margin: 1;
+    overflow-x: hidden;
+    font-family:'Roboto';
+}
+.io span:hover{
+    color:#e89e11;
+}
+.overlay {
+  background: rgb(0, 0, 0, -5);
+  height: 100vh;
+}
+
+.io {
+    height: 100px;
+    float: left; 
+    width:43%;
+    padding: 7.51px;
+    box-shadow:-1px -1px  10px black , inset 1px  1px    10px white; 
+    background:#fff  no-repeat fixed left bottom / cover;
+    font-family: Georgia, serif;
+} 
+.io ul li a:hover{
+    opacity: 0.7;
+    color: #e89e11;
+}
+
+.io:not(:nth-child(2)){
+    width: calc(50% - 50px) !important;
+}
+
+.io ul li {
+    list-style-type: none;
+    float: right;
+    width: 100px;
+    padding: 2px;
+} 
+.io ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:rgba(0,0,0,0.9);
+    transition:.9s ease all;
+    position : relative;
+    top:1em;
+    line-height: 20px; 
+    text-align: right; 
+}
+#logo{
+    position: relative !important ;
+    height: auto;
+    box-shadow: none;
+    width : auto!important;
+    margin: none;
+}
+.overlay {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,0.9);
+   overflow-x: hidden;
+   transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+#menu {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px 40px;
+    background: #dbc69f;
+    min-height: 100vh;
+
+}
+#menu2 {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px 40px;
+    background: none;
+    min-height: 100vh;
+    background:linear-gradient(rgba(24, 16, 3, 0.3), rgba(46, 31, 4, 0.4)), url(/img/back.jpg); 
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.head{
+    background: rgb(245, 242, 242);
+    color: #373333;
+    box-shadow:-1px -1px  10px black , inset 1px  1px    10px white; 
+    margin-bottom: 30px;
+    padding: 60px 0 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading > h3 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.card {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px 20px;
+}
+.card img {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    border-radius: 15px 15px 0 0;
+}
+  
+.details {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+  .details-sub {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.price {
+    text-align: right;
+}
+.details p {
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 25px;
+    align-self: stretch;
+}
+.details button {
+    background-color:rgb(232, 158, 17); 
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    width: 180px;
+    height:40px;
+}
+.details button:hover{
+    background:#deb05a;
+    opacity:2;
+}
+
+/* When the height of the screen is less than
+450 pixels, this will change the font-size of
+the links and position the close button again,
+so they don't overlap */ 
+
+@media screen and (max-height:450px){
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.h-primary{
+    font-family: cursive;
+    font-size:40px;
+    font-style: italic;
+    color:#f1eeee
+}
+#home {
+    text-align: center;
+    padding: 220px 220px 20px;
+    color: #fff;
+}
+#home {
+    text-align: center;
+    padding: 220px 220px 20px;
+    color: #fff;
+}
+#home p{   
+    font-family: monospace;
+    font-size: 20px;
+    font-style: italic;
+    color: #ffffff;
+    background:linear-gradient(#e89e11,#f2ab26b1);
+    width:60%;
+    margin:auto;
+    padding:10px;
+    border-radius: 25px;
+    border:3px solid;
+    border-color: #ffa007;
+}
+#home h2,h3{
+    font-size: 20px;
+    font-family: cursive;
+}
+.well {
+    background: rgb(0, 0, 0, -5);
+    height: 100vh;
+}
+.btn {
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+}
+.promo{
+    background-color:#e89e11;
+    border-radius:25px;
+    padding:px;
+    width:fit-content;
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 290px;
+    background-color: white;
+    color: black;
+}
+.down a{
+    color: #000;
+}
+.down ul li{
+    list-style-type:none;
+}
+.fad{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.fad p{
+    margin: auto;
+    width: 50%;
+    font-size: large;
+    background-color: #e89e11;
+    border-radius: 25px;
+    text-align: center;
+    color:#fff
+}
+.fa:hover {
+  opacity: 1.7;
+  color: #e89e11;
+}
+
+/* Facebook */
+.fa-facebook {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding:9px;
+}
+/* Twitter */
+.fa-twitter {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  color:#000;
+  padding:9px;
+}
+.fa-instagram {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:#000;
+    padding:9px;
+}
+.fa-youtube-play {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:#000;
+    padding:9px;
+}
+
+#container {
+color:#f1eeee;
+text-transform: uppercase;
+font-size:36px;
+font-weight:bold;
+padding:80px 0px 20px;  
+width:100%;
+bottom:45%;
+display:block;
+}
+#flip {
+height:50px;
+overflow:hidden;
+}
+#flip > div > div {
+color:#fff;
+padding:4px 12px;
+height:45px;
+margin-bottom:45px;
+display:inline-block;
+}
+#flip div:first-child {
+animation: show 5s linear infinite;
+}
+#flip div div {
+background:#000000;
+}
+#flip div:first-child div {
+background:#e89e11;
+}
+#flip div:last-child div {
+background:#DC143C;
+}
+@keyframes show {
+0% {margin-top:-270px;}
+5% {margin-top:-180px;}
+33% {margin-top:-180px;}
+38% {margin-top:-90px;}
+66% {margin-top:-90px;}
+71% {margin-top:0px;}
+99.99% {margin-top:0px;}
+100% {margin-top:-270px;}
+}

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Davysongs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gusto Restaurant | Login</title>
+        <link rel="stylesheet" href="CSS\login_style.css">
+        <link rel="icon" href="img/logo.png" type="image/x-icon"/>
+<body>
+    <header>
+        <div class="pot">
+            <a href="homepage.html"><img src="img/logo.png" width="100px" height="100px"></a>
+        </div>          
+    </header>
+        <div class="log">
+            <form>
+                <label for="email">Email</label>
+                <input type="Email" placeholder="Enter Email" name="email" required>
+                <label class="lab">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" minlength="8" required><br>     
+                <span><a href="#">Forgot Password?</a></span>
+                <button type="submit" class="post"> Login</button>
+            </form>
+            <a onclick="document.getElementById('id01').style.display='block'"style="width:auto;">Don't have an account?</a> 
+            <div id="id01" class="modal">
+                <form class="modal-content animate"action="">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">
+                            &times;
+                        </span>
+                        <img src="img/logo.png" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter full name" id="name" name="uname" required><br>
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter valid email" id="email" name="email" required><br>
+                        <label>Phone</label>
+                        <input type="tel" placeholder="Phone number" id="phone" name="phone" required><br>
+                        <label>Password</label>
+                        <input type="password" placeholder="Between 8 and 72 characters" id="password" name="password" minlength="8" required><br>
+                        <button id = "submit">Create Account</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <span class="psw" onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">
+                            <h3>Already have an account?</h3>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            &copy; GUSTO RESTAURANT 2023
+        </footer>
+        <script src="signup.js"></script>
+        <script src="login.js"></script>
+    </body>
+</html>
